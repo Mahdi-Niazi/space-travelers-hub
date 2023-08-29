@@ -5,7 +5,7 @@ import './module.NavLink.css';
 
 const NavLinkComponent = () => {
   const clickedStyle = ({ isActive }) => ({
-    color: isActive ? 'black' : 'red',
+    textDecoration: isActive ? 'underline' : 'none',
   });
   return (
     <nav className="Navbar">
