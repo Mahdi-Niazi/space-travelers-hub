@@ -14,8 +14,9 @@
   gap: 1rem;
   text-decoration: none;
 }
-.nav-logo h1{
-  color:black;
+
+.nav-logo h1 {
+  color: black;
 }
 
 .logo {
@@ -23,18 +24,22 @@
   height: 50px;
   margin-left: 10px;
 }
+
 .nav-items {
   display: flex;
   gap: 30px;
   list-style: none;
 }
-.li-missions{
+
+.li-missions {
   border-right: 1px solid black;
 }
-.navlinks-missions{
+
+.navlinks-missions {
   margin-right: 20px;
 }
-.navlinks, 
-.navlinks-missions{
-  color:blue;
+
+.navlinks,
+.navlinks-missions {
+  color: blue;
 }
