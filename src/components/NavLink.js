@@ -16,17 +16,17 @@ const NavLinkComponent = () => {
         </NavLink>
         <ul className="nav-items">
           <li>
-            <NavLink to="/" onClick={clickedStyle} className="navlinks">
+            <NavLink to="/" style={clickedStyle} className="navlinks">
               Rockets
             </NavLink>
           </li>
           <li>
-            <NavLink to="/missions" onClick={clickedStyle} className="navlinks">
+            <NavLink to="/missions" style={clickedStyle} className="navlinks">
               Missions |
             </NavLink>
           </li>
           <li>
-            <NavLink to="/my-profile" onClick={clickedStyle} className="navlinks">
+            <NavLink to="/my-profile" style={clickedStyle} className="navlinks">
               My Profile
             </NavLink>
           </li>
