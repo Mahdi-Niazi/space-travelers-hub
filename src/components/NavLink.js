@@ -20,9 +20,9 @@ const NavLinkComponent = () => {
               Rockets
             </NavLink>
           </li>
-          <li>
-            <NavLink to="/missions" style={clickedStyle} className="navlinks">
-              Missions |
+          <li className="li-missions">
+            <NavLink to="/missions" style={clickedStyle} className="navlinks-missions">
+              Missions
             </NavLink>
           </li>
           <li>
