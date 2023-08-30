@@ -59,6 +59,16 @@
   cursor: pointer;
 }
 
+.leaveMission {
+  padding: 10px 15px;
+  font-size: 15px;
+  background: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid red;
+  color: red;
+}
+
 .memberBtn {
   text-align: center;
 }
