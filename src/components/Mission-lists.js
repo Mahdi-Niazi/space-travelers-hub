@@ -4,8 +4,16 @@ import PropTypes from 'prop-types';
 const MissionList = ({ missions, descriptions }) => (
   <>
     <tr>
-      <td>{missions}</td>
+      <td className="titles">{missions}</td>
       <td>{descriptions}</td>
+      <td className="memberBtn">
+        <span className="statusStyle">NOT A MEMBER</span>
+      </td>
+      <td className="memberBtn">
+        <button type="button" className="joinMission">
+          Join Mission
+        </button>
+      </td>
     </tr>
   </>
 );
