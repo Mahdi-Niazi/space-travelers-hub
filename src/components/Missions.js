@@ -9,8 +9,8 @@ const Missions = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(getMissions());
-  }, [dispatch]);
+    if (!allMissions.length) dispatch(getMissions());
+  }, [dispatch, allMissions]);
 
   return (
     <div className="table-container">
@@ -30,6 +30,7 @@ const Missions = () => {
               id={item.mission_id}
               missions={item.mission_name}
               descriptions={item.description}
+              joined={item.joined}
             />
           ))}
         </tbody>
