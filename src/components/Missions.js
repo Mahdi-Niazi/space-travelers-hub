@@ -31,6 +31,7 @@ const Missions = () => {
               missions={item.mission_name}
               descriptions={item.description}
               joined={item.joined}
+              leave={item.joined}
             />
           ))}
         </tbody>
