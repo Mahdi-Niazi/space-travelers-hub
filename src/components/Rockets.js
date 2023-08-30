@@ -17,7 +17,6 @@ const Rockets = () => {
 
   return (
     <div>
-      <h2>Rockets List</h2>
       <div className="rockets-container">
         {loading}
         {error}
@@ -25,7 +24,7 @@ const Rockets = () => {
           <Card key={rocket.id} className="rocket-card">
             <Card.Img variant="top" src={rocket.flickr_images[0]} className="card-image" />
             <Card.Body>
-              <Card.Title>{rocket.rocket_name}</Card.Title>
+              <Card.Title className="title">{rocket.rocket_name}</Card.Title>
               <Card.Text>{rocket.description}</Card.Text>
             </Card.Body>
           </Card>
