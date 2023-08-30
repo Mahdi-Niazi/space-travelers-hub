@@ -5,6 +5,7 @@ const RocketsbaseUrl = 'https://api.spacexdata.com/v3/rockets';
 
 const initialState = {
   allRockets: [],
+  reserved: false,
   isLoading: false,
 };
 
@@ -23,6 +24,12 @@ export const getRockets = createAsyncThunk(
 const rocketsSlice = createSlice({
   name: 'rockets',
   initialState,
+  reducers: {
+    setReserved: (state, action) => {
+      state.allRockets = state.allRockets.map((rocket) => (
+        rocket.id !== action.payload ? rocket : { ...rocket, reserved: true }));
+    },
+  },
   extraReducers: (builder) => {
     builder.addCase(getRockets.fulfilled, (state, action) => {
       const rockets = Object.entries(action.payload).map((items) => ({
@@ -43,3 +50,4 @@ const rocketsSlice = createSlice({
 });
 
 export default rocketsSlice.reducer;
+export const { setReserved } = rocketsSlice.actions;

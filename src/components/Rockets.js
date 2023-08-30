@@ -1,19 +1,25 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import Card from 'react-bootstrap/Card';
-import { getRockets } from '../redux/slices/RocketsSlice';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './module.Rockets.css';
+import Card from 'react-bootstrap/Card';
+import { Button } from 'react-bootstrap';
+import { getRockets, setReserved } from '../redux/slices/RocketsSlice';
 
 const Rockets = () => {
   const { isLoading, isError, allRockets } = useSelector((store) => store.rockets);
   const dispatch = useDispatch();
 
+  const handleReserve = (rocketId) => {
+    dispatch(setReserved(rocketId));
+  };
+
   useEffect(() => {
     dispatch(getRockets());
   }, [dispatch]);
 
-  const loading = isLoading && <p>Books loading, please wait!</p>;
-  const error = isError && <p>Error loading books, please try again!</p>;
+  const loading = isLoading && <p>Rockets loading, please wait!</p>;
+  const error = isError && <p>Error loading rockets, please try again!</p>;
 
   return (
     <div>
@@ -26,6 +32,14 @@ const Rockets = () => {
             <Card.Body>
               <Card.Title className="title">{rocket.rocket_name}</Card.Title>
               <Card.Text>{rocket.description}</Card.Text>
+              <Button
+                className={`mt-4 py-2 px-4 ${rocket.reserved ? 'reserved' : ''}`}
+                variant={rocket.reserved ? 'success' : 'primary'}
+                onClick={() => handleReserve(rocket.id)}
+                disabled={rocket.reserved}
+              >
+                {rocket.reserved ? 'Reserved' : 'Reserve Rocket'}
+              </Button>
             </Card.Body>
           </Card>
         ))}

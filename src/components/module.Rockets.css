@@ -8,15 +8,22 @@
 
 .rocket-card {
   display: flex;
+  flex-direction: row;
   gap: 36px;
   margin-top: 10px;
 }
 
 .card-image {
-  width: 200px;
+  width: 250px;
+  height: 200px;
 }
 
 .title {
   color: rgb(11, 11, 11);
   font-weight: bold;
+}
+
+.reserved {
+  background-color: green;
+  cursor: not-allowed;
 }
