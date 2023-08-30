@@ -35,9 +35,17 @@
   font-weight: 900;
 }
 
-.statusStyle {
+.nonactiveStyle {
   padding: 5px;
   background-color: #777474;
+  color: white;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.activeStyle {
+  padding: 5px;
+  background-color: #07a6a6;
   color: white;
   border-radius: 5px;
   font-size: 14px;
