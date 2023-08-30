@@ -1,0 +1,14 @@
+.rockets-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.rocket-card {
+    display: flex;
+    gap: 36px;
+}
+
+.card-image {
+    width: 200px;
+}

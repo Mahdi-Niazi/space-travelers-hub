@@ -29,12 +29,15 @@ const rocketsSlice = createSlice({
         id: items[0],
         ...items[1],
       }));
-      return { ...state, allRockets: rockets };
+      return { ...state, allRockets: rockets, isLoading: false };
     });
     builder.addCase(getRockets.pending, (state) => ({
       ...state,
       isLoading: true,
     }));
+    builder.addCase(getRockets.rejected, (state) => {
+      state.isLoading = false;
+    });
   },
 
 });
