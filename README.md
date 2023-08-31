@@ -14,7 +14,7 @@
 # 📗 Table of Contents
 
 - [📗 Table of Contents](#-table-of-contents)
-- [📖 \[Book Store\] ](#-book-store-)
+- [📖 \[Space X Traveler's Hub\] ](#-space-x-travelers-hub-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -32,7 +32,7 @@
 
 
 
-# 📖 [Book Store] <a name="about-project">
+# 📖 [Space X Traveler's Hub] <a name="about-project">
   This website contain three webpages with rockets, mission, and my profile. 
   In the rocket page we will fetch data from Space X real data from API and the missions.
   Visitors can select their rockets and the missions from the current website.

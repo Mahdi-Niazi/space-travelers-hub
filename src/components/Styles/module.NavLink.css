@@ -3,8 +3,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  align-self: center;
   width: 90%;
   margin: 0 auto;
+  padding: 10px;
 }
 
 .nav-logo {

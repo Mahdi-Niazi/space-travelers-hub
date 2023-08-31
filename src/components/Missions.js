@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getMissions } from '../redux/slices/MissionsSlice';
 import MissionList from './Mission-lists';
-import './module.Missions.css';
+import './Styles/module.Missions.css';
 
 const Missions = () => {
   const { allMissions } = useSelector((store) => store.missions);

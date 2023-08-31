@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/images/logo.png';
-import './module.NavLink.css';
+import './Styles/module.NavLink.css';
 
 const NavLinkComponent = () => {
   const clickedStyle = ({ isActive }) => ({
