@@ -17,7 +17,9 @@
     "react-router": "^6.15.0",
     "react-router-dom": "6.4",
     "react-scripts": "5.0.1",
+    "react-test-renderer": "^18.2.0",
     "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.4.2",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -48,6 +50,7 @@
     "@babel/core": "^7.22.11",
     "@babel/eslint-parser": "^7.22.11",
     "@babel/plugin-syntax-jsx": "^7.22.5",
+    "@babel/preset-env": "^7.22.14",
     "@babel/preset-react": "^7.22.5",
     "eslint": "^7.32.0",
     "eslint-config-airbnb": "^18.2.1",

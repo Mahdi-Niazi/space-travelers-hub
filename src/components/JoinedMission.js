@@ -4,9 +4,10 @@ import { ListGroup } from 'react-bootstrap';
 
 const JoinedMission = ({ joinedMissions }) => (
   <div className="container">
-
     {joinedMissions.length === 0 ? (
-      <p style={{ color: 'red' }}>No Joined Missions</p>
+      <p style={{ color: 'red' }} data-testid="pID">
+        No Joined Missions
+      </p>
     ) : (
       <ListGroup className="shadow p-3 mb-5 bg-body-tertiary rounded">
         {joinedMissions.map((mission) => (
