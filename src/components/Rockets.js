@@ -20,8 +20,8 @@ const Rockets = () => {
   };
 
   useEffect(() => {
-    dispatch(getRockets());
-  }, [dispatch]);
+    if (!allRockets.length) dispatch(getRockets());
+  }, [dispatch, allRockets]);
 
   const loading = isLoading && <p>Rockets loading, please wait!</p>;
   const error = isError && <p>Error loading rockets, please try again!</p>;
