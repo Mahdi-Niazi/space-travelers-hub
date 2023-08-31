@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './module.Rockets.css';
 import Card from 'react-bootstrap/Card';
 import { Button } from 'react-bootstrap';
-import { getRockets, setReserved } from '../redux/slices/RocketsSlice';
+import { getRockets, setReserved, cancelReserved } from '../redux/slices/RocketsSlice';
 
 const Rockets = () => {
   const { isLoading, isError, allRockets } = useSelector((store) => store.rockets);
@@ -12,6 +12,10 @@ const Rockets = () => {
 
   const handleReserve = (rocketId) => {
     dispatch(setReserved(rocketId));
+  };
+
+  const handleCancel = (rocketId) => {
+    dispatch(cancelReserved(rocketId));
   };
 
   useEffect(() => {
@@ -34,11 +38,12 @@ const Rockets = () => {
               <Card.Text>{rocket.description}</Card.Text>
               <Button
                 className={`mt-4 py-2 px-4 ${rocket.reserved ? 'reserved' : ''}`}
-                variant={rocket.reserved ? 'success' : 'primary'}
-                onClick={() => handleReserve(rocket.id)}
-                disabled={rocket.reserved}
+                variant={rocket.reserved ? 'danger' : 'primary'}
+                onClick={() => (
+                  rocket.reserved ? handleCancel(rocket.id) : handleReserve(rocket.id))}
+                disabled={isLoading}
               >
-                {rocket.reserved ? 'Reserved' : 'Reserve Rocket'}
+                {rocket.reserved ? 'Cancel Reservation' : 'Reserve'}
               </Button>
             </Card.Body>
           </Card>
