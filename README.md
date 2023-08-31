@@ -4,7 +4,7 @@
 <div align="center">
   
   <img src="logo.png" alt="Logo" width="100px" height="80px">  
-  <h2> Mohammad Mahdi Niazi & Arnold<h2> 
+  <h2> Mohammad Mahdi Niazi & Ikonde Arnold Nekemiah<h2> 
   <h3><b>Space X travelers Hub</b></h3>
 
 </div>
@@ -93,10 +93,10 @@ Test for Linters For tracking linter errors locally you need to follow these ste
 - Twitter: [@mahdinazi1](https://twitter.com/mahdiniazi1)
 - LinkedIn: [Mohammad Mahdi Niazi](https://www.linkedin.com/in/mohammad-mahdi-niazi-58a262235/)
 
-👤 **Arnold Nekemiah**
+👤 **Ikonde Arnold Nekemiah**
 - GitHub: [@arnoldnekemiah](https://github.com/arnoldnekemiah)
-- Twitter: [@mahdinazi1](https://twitter.com/mahdiniazi1)
-- LinkedIn: [Mohammad Mahdi Niazi](https://www.linkedin.com/in/mohammad-mahdi-niazi-58a262235/)
+- Twitter: [@arnoldikonde](https://twitter.com/arnoldikonde)
+- LinkedIn: [Ikonde (Arnold) Nekemiah](https://www.linkedin.com/in/arnoldnekemiah/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
