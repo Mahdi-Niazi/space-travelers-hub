@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Mission component should match snapshot 1`] = `
+<tr>
+  <td
+    className="titles"
+  />
+  <td />
+  <td
+    className="memberBtn"
+  >
+    <span
+      className="nonactiveStyle"
+    >
+      NOT A MEMBER
+    </span>
+  </td>
+  <td
+    className="memberBtn"
+  >
+    <button
+      className="joinMission"
+      onClick={[Function]}
+      type="button"
+    >
+      Join Mission
+    </button>
+  </td>
+</tr>
+`;

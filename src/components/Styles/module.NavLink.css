@@ -1,0 +1,48 @@
+.nav-container {
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-self: center;
+  width: 90%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+}
+
+.nav-logo h1 {
+  color: black;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+}
+
+.nav-items {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  margin-top: 15px;
+}
+
+.li-missions {
+  border-right: 1px solid black;
+}
+
+.navlinks-missions {
+  margin-right: 20px;
+}
+
+.navlinks,
+.navlinks-missions {
+  color: blue;
+}

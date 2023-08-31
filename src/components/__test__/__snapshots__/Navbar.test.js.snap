@@ -1,0 +1,76 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test the Mission file should match to snapshoot 1`] = `
+<nav
+  className="Navbar"
+>
+  <div
+    className="nav-container"
+  >
+    <a
+      aria-current="page"
+      className="nav-logo active"
+      href="/"
+      onClick={[Function]}
+    >
+      <img
+        alt="logo"
+        className="logo"
+        src="logo.png"
+      />
+      <h1>
+        Space Travellers
+      </h1>
+    </a>
+    <ul
+      className="nav-items"
+    >
+      <li>
+        <a
+          aria-current="page"
+          className="navlinks active"
+          href="/"
+          onClick={[Function]}
+          style={
+            Object {
+              "textDecoration": "underline",
+            }
+          }
+        >
+          Rockets
+        </a>
+      </li>
+      <li
+        className="li-missions"
+      >
+        <a
+          className="navlinks-missions"
+          href="/missions"
+          onClick={[Function]}
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+        >
+          Missions
+        </a>
+      </li>
+      <li>
+        <a
+          className="navlinks"
+          href="/my-profile"
+          onClick={[Function]}
+          style={
+            Object {
+              "textDecoration": "none",
+            }
+          }
+        >
+          My Profile
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+`;
