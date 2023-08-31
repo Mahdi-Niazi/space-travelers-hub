@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './module.Rockets.css';
 import Card from 'react-bootstrap/Card';
+import Badge from 'react-bootstrap/Badge';
 import { Button } from 'react-bootstrap';
 import { getRockets, setReserved, cancelReserved } from '../redux/slices/RocketsSlice';
 
@@ -34,7 +35,11 @@ const Rockets = () => {
           <Card key={rocket.id} className="rocket-card">
             <Card.Img variant="top" src={rocket.flickr_images[0]} className="card-image" />
             <Card.Body>
-              <Card.Title className="title">{rocket.rocket_name}</Card.Title>
+              <Card.Title className="title">
+                {rocket.reserved && <Badge variant="success">Reserved</Badge>}
+                {' '}
+                {rocket.rocket_name}
+              </Card.Title>
               <Card.Text>{rocket.description}</Card.Text>
               <Button
                 className={`mt-4 py-2 px-4 ${rocket.reserved ? 'reserved' : ''}`}
