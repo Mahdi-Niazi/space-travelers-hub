@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rockets Component should match the snapshot 1`] = `
+<div>
+  <div>
+    <div
+      class="rockets-container"
+    >
+      <p>
+        Rockets loading, please wait!
+      </p>
+    </div>
+  </div>
+</div>
+`;
