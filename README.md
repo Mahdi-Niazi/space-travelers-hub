@@ -4,7 +4,7 @@
 <div align="center">
   
   <img src="logo.png" alt="Logo" width="100px" height="80px">  
-  <h2> Mohammad Mahdi Niazi & Arnold<h2> 
+  <h2> Mohammad Mahdi Niazi & Ikonde Arnold Nekemiah<h2> 
   <h3><b>Space X travelers Hub</b></h3>
 
 </div>
