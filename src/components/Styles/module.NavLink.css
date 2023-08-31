@@ -15,6 +15,7 @@
   align-items: center;
   gap: 1rem;
   text-decoration: none;
+
 }
 
 .nav-logo h1 {
@@ -31,6 +32,7 @@
   display: flex;
   gap: 30px;
   list-style: none;
+  margin-top: 15px;
 }
 
 .li-missions {
